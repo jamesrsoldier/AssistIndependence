@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDDQSFGBBS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PDDQSFGBBS');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found — AssistIndependence</title>
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="site-header">
@@ -35,44 +43,47 @@
           <li><a href="/guides/" class="nav-link">Guides</a></li>
         </ul>
       </nav>
-      <div class="header-actions">
-        <a href="/" class="btn btn-primary btn-sm">Go Home</a>
-      </div>
-      <button class="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
-        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
     </div>
   </header>
 
-  <div id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
-    <ul class="mobile-nav-list">
-      <li><a href="/" class="mobile-nav-link">Home</a></li>
-      <li><a href="/bathroom-safety/" class="mobile-nav-link">Bathroom</a></li>
-      <li><a href="/mobility/" class="mobile-nav-link">Mobility</a></li>
-      <li><a href="/bedroom/" class="mobile-nav-link">Bedroom</a></li>
-      <li><a href="/kitchen/" class="mobile-nav-link">Kitchen</a></li>
-      <li><a href="/smart-home/" class="mobile-nav-link">Smart Home</a></li>
-      <li><a href="/guides/" class="mobile-nav-link">Guides</a></li>
-    </ul>
-    <div class="mobile-nav-cta"><a href="/" class="btn btn-primary">Go Home</a></div>
-  </div>
+  <main id="main-content">
+    <section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+      <div class="container" style="text-align: center;">
+        <h1 style="font-size: 4rem; margin-bottom: 1rem; color: var(--color-warm-gray);">404</h1>
+        <h2 style="margin-bottom: 1.5rem;">Page Not Found</h2>
+        <p style="max-width: 500px; margin: 0 auto 2rem; color: var(--color-warm-gray);">
+          Sorry, we couldn't find the page you're looking for. It may have been moved or no longer exists.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/" class="btn btn-primary">Go to Homepage</a>
+          <a href="/guides/" class="btn btn-outline">Browse Guides</a>
+        </div>
 
-  <main id="main-content" class="page-body" style="display:flex;align-items:center;justify-content:center;min-height:calc(100vh - var(--header-h));text-align:center;padding:var(--sp-8);">
-    <div style="max-width:560px;">
-      <div style="font-size:7rem;font-weight:var(--fw-bold);color:var(--color-warm-blue);line-height:1;margin-bottom:var(--sp-4);opacity:0.25;">404</div>
-      <h1 style="font-size:var(--fs-2xl);font-weight:var(--fw-bold);color:var(--color-black);margin-bottom:var(--sp-4);">This page couldn't be found</h1>
-      <p style="font-size:var(--fs-md);color:var(--color-text-light);line-height:var(--lh-relaxed);margin-bottom:var(--sp-8);">The page you're looking for may have moved or no longer exists. Let's get you back on track — here are some helpful places to start.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:center;">
-        <a href="/" class="btn btn-primary btn-lg">Go Home</a>
-        <a href="/bathroom-safety/" class="btn btn-secondary">Bathroom Safety</a>
-        <a href="/guides/" class="btn btn-secondary">Browse Guides</a>
-        <a href="/contact/" class="btn btn-secondary">Contact Us</a>
+        <div style="margin-top: 3rem;">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Popular Categories</h3>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="/bathroom-safety/" class="nav-link">Bathroom Safety</a>
+            <a href="/mobility/" class="nav-link">Mobility Aids</a>
+            <a href="/bedroom/" class="nav-link">Bedroom</a>
+            <a href="/kitchen/" class="nav-link">Kitchen</a>
+          </div>
+        </div>
       </div>
-      <p style="margin-top:var(--sp-8);font-size:var(--fs-sm);color:var(--color-text-light);">Or use the navigation above to find what you're looking for.</p>
-    </div>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer-copyright">&copy; 2026 AssistIndependence. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="/js/main.js"></script>
 </body>
 </html>
